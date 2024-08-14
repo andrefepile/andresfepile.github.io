@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La historia de Goku</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Estilos del primer código */
+        /* Estilos específicos */
         body {
             background-color: #0051a9;
             color: #333;
@@ -56,18 +56,24 @@
         footer {
             background-color: #cccccc;
         }
+
+        /* Usando class para modificar el tamaño del texto */
         .large-text {
             font-size: 1.5em;
         }
         .small-text {
             font-size: 0.75em;
         }
+
+        /* Usando id para modificar el tipo de letra */
         #historia-goku-text {
             font-family: 'Times New Roman', Times, serif;
         }
         #personajes-text {
             font-family: 'Courier New', Courier, monospace;
         }
+        
+        /* Estilos para la tabla */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -88,82 +94,31 @@
         .center-text {
             text-align: center;
         }
+
+        /* Agrupación de selectores tipo id y class */
         #inicio, #historia-goku, #personajes, #impacto-cultural, #curiosidades, #tabla-info {
             background-color: #fff;
             color: #000;
             padding: 20px;
             margin: 10px 0;
         }
+
+        /* Selectores descendientes */
         nav ul li a {
             font-size: 1em;
             padding: 5px;
         }
+
+        /* Pseudo-clases */
         nav ul li a:hover {
             color: #fff;
             background-color: #333;
-        }
-
-        /* Estilos del segundo código */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        nav ul {
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            float: left;
-        }
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #111;
-        }
-        section {
-            padding: 1em;
-            background-color: #f4f4f4;
-            margin-left: 200px;
-        }
-        aside {
-            width: 200px;
-            position: absolute;
-            left: 0;
-            top: 100px;
-            background-color: #f4f4f4;
-            padding: 1em;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-        header, nav, section, aside, footer {
-            border: 1px solid #ccc;
-            margin: 10px;
-            padding: 10px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
         }
     </style>
 </head>
 <body>
     <header class="bg-primary text-white text-center py-4">
-        <h1>Goku y su Historia</h1>
+        <h1>Esto es una etiqueta header</h1>
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -197,84 +152,83 @@
         </div>
     </nav>
     <div class="container">
-        <section id="inicio" class="my-4">
-            <h2>Descripción del Sitio Web</h2>
-            <p>Bienvenidos a nuestro sitio web dedicado a Goku, el legendario guerrero Saiyajin del universo Dragon Ball. Aquí exploraremos su historia desde sus humildes comienzos en la Tierra, hasta sus épicas batallas contra poderosos enemigos en el multiverso. Acompáñanos en este viaje para descubrir los secretos, hazañas y el legado de Goku.</p>
+        <section id="seccion" class="my-4">
+            <article id="inicio">
+                <h2>Descripción del Sitio Web</h2>
+                <p>Bienvenidos a nuestro sitio web dedicado a Goku, el legendario guerrero Saiyajin del universo Dragon Ball. Aquí exploraremos su historia desde sus humildes comienzos en la Tierra, hasta sus épicas batallas contra poderosos enemigos en el multiverso. Acompáñanos en este viaje para descubrir los secretos, hazañas y el legado de Goku.</p>
+            </article>
+            <article id="historia-goku">
+                <h2>Historia de Goku</h2>
+                <p>Goku, cuyo nombre original es Kakarotto, es un Saiyajin enviado a la Tierra poco antes de la destrucción de su planeta natal, Vegeta. Criado por el anciano Gohan, Goku se convierte en un joven con una fuerza extraordinaria y un corazón puro. A lo largo de su vida, se enfrenta a numerosos enemigos, hace grandes amigos y alcanza niveles de poder inimaginables, convirtiéndose en uno de los guerreros más poderosos del universo.</p>
+            </article>
+            <article id="personajes">
+                <h2>Personajes Clave</h2>
+                <p id="historia-goku-text">A lo largo de su viaje, Goku se encuentra con muchos personajes importantes que influyen en su vida y en su desarrollo como guerrero. Algunos de los más destacados son:</p>
+                <ul>
+                    <li>Bulma: La primera amiga de Goku y una genio tecnológica.</li>
+                    <li>Vegeta: El príncipe Saiyajin que comienza como su rival y termina siendo su aliado.</li>
+                    <li>Piccolo: Un antiguo enemigo que se convierte en uno de sus más grandes aliados.</li>
+                    <li>Gohan: Su hijo mayor, quien también demuestra ser un guerrero formidable.</li>
+                    <li>Krillin: Su mejor amigo y compañero de entrenamiento desde la infancia.</li>
+                </ul>
+            </article>
+            <article id="impacto-cultural">
+                <h2>Impacto Cultural</h2>
+                <p>Goku ha dejado una marca indeleble en la cultura popular a nivel mundial. Desde su debut en el manga de Akira Toriyama, Dragon Ball se ha convertido en una de las franquicias más populares y queridas, influenciando innumerables otras obras de manga y anime. Además, Goku ha aparecido en una amplia gama de productos de merchandising, videojuegos, y ha sido objeto de múltiples análisis académicos y culturales.</p>
+            </article>
+            <article id="curiosidades">
+                <h2>Curiosidades</h2>
+                <p>Aquí tienes algunas curiosidades sobre Goku y la serie Dragon Ball:</p>
+                <ul>
+                    <li>El nombre Saiyajin es un juego de palabras en japonés: "Saiya" es un anagrama de "yasai" (verdura) y "jin" significa persona.</li>
+                    <li>Goku ha alcanzado numerosas transformaciones, siendo las más icónicas el Super Saiyan, Super Saiyan God y Ultra Instinct.</li>
+                    <li>Akira Toriyama, el creador de Dragon Ball, originalmente planeaba terminar la serie después de la saga de Freezer.</li>
+                    <li>La voz de Goku en la versión japonesa es interpretada por Masako Nozawa, quien también da voz a sus hijos Gohan y Goten.</li>
+                </ul>
+            </article>
+            <article id="tabla-info">
+                <h2>Tabla de Información</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="center-text">Atributo</th>
+                            <th class="center-text">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Goku (Kakarotto)</td>
+                        </tr>
+                        <tr>
+                            <td>Origen</td>
+                            <td>Planeta Vegeta</td>
+                        </tr>
+                        <tr>
+                            <td>Transformaciones</td>
+                            <td>Super Saiyan, Super Saiyan God, Ultra Instinct, entre otras</td>
+                        </tr>
+                        <tr>
+                            <td>Aliados</td>
+                            <td>Vegeta, Piccolo, Gohan, Krillin, Bulma</td>
+                        </tr>
+                        <tr>
+                            <td>Enemigos</td>
+                            <td>Freezer, Cell, Majin Buu, Jiren, entre otros</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
         </section>
-        <section id="historia-goku" class="my-4">
-            <h2>Historia de Goku</h2>
-            <p>Goku, cuyo nombre original es Kakarotto, es un Saiyajin enviado a la Tierra poco antes de la destrucción de su planeta natal, Vegeta. Criado por el anciano Gohan, Goku se convierte en un joven con una fuerza extraordinaria y un corazón puro. A lo largo de su vida, se enfrenta a numerosos enemigos, hace grandes amigos y alcanza niveles de poder inimaginables, convirtiéndose en uno de los guerreros más poderosos del universo.</p>
-        </section>
-        <section id="personajes" class="my-4">
-            <h2>Personajes Clave</h2>
-            <p id="historia-goku-text">A lo largo de su viaje, Goku se encuentra con muchos personajes importantes que influyen en su vida y en su desarrollo como guerrero. Algunos de los más destacados son:</p>
-            <ul>
-                <li>Bulma: La primera amiga de Goku y una genio tecnológica.</li>
-                <li>Vegeta: El príncipe Saiyajin que comienza como su rival y termina siendo su aliado.</li>
-                <li>Piccolo: Un antiguo enemigo que se convierte en uno de sus más grandes aliados.</li>
-                <li>Gohan: Su hijo mayor, quien también demuestra ser un guerrero formidable.</li>
-                <li>Krillin: Su mejor amigo y compañero de entrenamiento desde la infancia.</li>
-            </ul>
-        </section>
-        <section id="impacto-cultural" class="my-4">
-            <h2>Impacto Cultural</h2>
-            <p>Goku ha dejado una marca indeleble en la cultura popular a nivel mundial. Desde su debut en el manga de Akira Toriyama, Dragon Ball se ha convertido en una de las franquicias más populares y queridas, influenciando innumerables otras obras de manga y anime. Además, Goku ha aparecido en una amplia gama de productos de merchandising, videojuegos, y ha sido objeto de múltiples análisis académicos y culturales.</p>
-        </section>
-        <section id="curiosidades" class="my-4">
-            <h2>Curiosidades</h2>
-            <p>Aquí tienes algunas curiosidades sobre Goku y la serie Dragon Ball:</p>
-            <ul>
-                <li>El nombre Saiyajin es un juego de palabras en japonés: "Saiya" es un anagrama de "yasai" (verdura) y "jin" significa persona.</li>
-                <li>Goku ha alcanzado numerosas transformaciones, siendo las más icónicas el Super Saiyan, Super Saiyan God y Ultra Instinct.</li>
-                <li>Akira Toriyama, el creador de Dragon Ball, originalmente planeaba terminar la serie después de la saga de Freezer.</li>
-                <li>La voz de Goku en la versión japonesa es interpretada por Masako Nozawa, quien también da voz a sus hijos Gohan y Goten.</li>
-            </ul>
-        </section>
-        <section id="tabla-info" class="my-4">
-            <h2>Tabla de Información</h2>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th class="center-text">Atributo</th>
-                        <th class="center-text">Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Nombre</td>
-                        <td>Goku (Kakarotto)</td>
-                    </tr>
-                    <tr>
-                        <td>Origen</td>
-                        <td>Planeta Vegeta</td>
-                    </tr>
-                    <tr>
-                        <td>Transformaciones</td>
-                        <td>Super Saiyan, Super Saiyan God, Ultra Instinct, entre otras</td>
-                    </tr>
-                    <tr>
-                        <td>Aliados</td>
-                        <td>Vegeta, Piccolo, Gohan, Krillin, Bulma</td>
-                    </tr>
-                    <tr>
-                        <td>Enemigos</td>
-                        <td>Freezer, Cell, Majin Buu, Jiren, entre otros</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <aside id="aside" class="position-absolute p-4 bg-light border">
+            <h2>Datos Curiosos</h2>
+            <p>¿Sabías que Goku inicialmente tenía una cola de mono? Esta característica es un rasgo distintivo de los Saiyajines y les permite transformarse en Oozaru (Gran Mono) cuando ven la luna llena.</p>
+            <h3>Hecho por:</h3>
+            <p>Felipe Origua - <a href="mailto:origuafelipe@gmail.com">origuafelipe@gmail.com</a></p>
+        </aside>
     </div>
-    <aside class="position-absolute p-4 bg-light border">
-        <h2>Datos Curiosos</h2>
-        <p>¿Sabías que Goku inicialmente tenía una cola de mono? Esta característica es un rasgo distintivo de los Saiyajines y les permite transformarse en Oozaru (Gran Mono) cuando ven la luna llena.</p>
-        <h3>Hecho por:</h3>
-        <p>Felipe Origua - <a href="mailto:origuafelipe@gmail.com">origuafelipe@gmail.com</a></p>
-    </aside>
     <footer id="footer" class="bg-dark text-white text-center py-4 position-absolute w-100" style="bottom: 0;">
-        <h2>Esto es una etiqueta &lt;footer&gt;</h2>
         <p>Contacto: Felipe Origua - <a href="mailto:origuafelipe@gmail.com">origuafelipe@gmail.com</a></p>
-
-        
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
